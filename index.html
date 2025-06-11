@@ -1,170 +1,130 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beanies On Business | BOB</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Beanies On Business</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/bob-logo.png" />
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fefaf6;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       text-align: center;
-    }
-    header img {
-      width: 120px;
-      margin-top: 20px;
-    }
-    h2 {
-      font-size: 28px;
-      margin: 40px 0 20px;
-    }
-    .member-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 20px;
-    }
-    .member-card {
-      width: 300px;
-      height: 300px;
-      background-color: #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s;
-    }
-    .member-card:hover {
-      transform: scale(1.05);
-    }
-    .member-card img {
-      width: 100%;
-      height: 80%;
-      object-fit: cover;
-    }
-    .member-card a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #111;
-      display: block;
-      padding: 8px 0;
-    }
+    }header {
+  background-color: #111;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+header img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.member {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.member a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.email-section form input[type="email"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+}
+
+.email-section form button {
+  padding: 10px 20px;
+  background-color: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
     <img src="images/bob-logo.png" alt="BOB Logo">
-  </header>  <section class="section" id="dao-members">
-    <h2>DAO Members</h2>
-    <div class="member-grid">
-      <div class="member-card">
+    <h1>BUILT BY HUSTLERS. WORN BY LEADERS.</h1>
+    <nav>
+      <a href="#what">What Is BOB?</a>
+      <a href="#join">Why Join?</a>
+      <a href="#members">DAO Members</a>
+      <a href="#contact">Stay Connected</a>
+    </nav>
+  </header>  <section id="what">
+    <h2>WHAT IS BEANIES ON BUSINESS?</h2>
+    <p>Born in the DoginalDogs ecosystem. Backed by community. Led by character, loyalty, and leadership. BOB is where pixel-born dogs become legends of Digital Business.</p>
+  </section>  <section id="join">
+    <h2>WHY JOIN?</h2>
+    <p>Participate in the Acquisition Group for DoginalDogs & Digital Assets. Shape and profit from premium apparel drops. Gain networking and visibility opportunities in a growing movement.</p>
+  </section>  <section id="members">
+    <h2>DAO MEMBERS</h2>
+    <div class="members">
+      <div class="member">
         <a href="https://twitter.com/brohmetax" target="_blank">
-          <img src="images/members/broh.png" alt="Broh">
+          <img src="images/members/broh.png" alt="Broh" />
           Broh
         </a>
       </div>
-      <div class="member-card">
+      <div class="member">
         <a href="https://twitter.com/papasxmeta" target="_blank">
-          <img src="images/members/papas.png" alt="Papas">
+          <img src="images/members/papas.png" alt="Papas" />
           Papas
         </a>
       </div>
-      <div class="member-card">
-        <a href="https://twitter.com/nerometax" target="_blank">
-          <img src="images/members/nero.png" alt="Nero">
-          Nero
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/georgexmeta" target="_blank">
-          <img src="images/members/g.png" alt="G">
-          G
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/ripmeta_x" target="_blank">
-          <img src="images/members/rip.png" alt="Rip">
-          Rip
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/machinemetax" target="_blank">
-          <img src="images/members/machine.png" alt="Machine">
-          Machine
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/frostymeta" target="_blank">
-          <img src="images/members/frost.png" alt="Frost">
-          Frost
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/crypto_sauce" target="_blank">
-          <img src="images/members/sauce.png" alt="Sauce">
-          Sauce
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/torchmeta_x" target="_blank">
-          <img src="images/members/torch.png" alt="Torch">
-          Torch
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/PacmetaX" target="_blank">
-          <img src="images/members/pac.png" alt="Pac">
-          Pac
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/bonesXventures" target="_blank">
-          <img src="images/members/bones.png" alt="Bones">
-          Bones
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/javiMetax" target="_blank">
-          <img src="images/members/javi.png" alt="Javi">
-          Javi
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/TealMetax" target="_blank">
-          <img src="images/members/teal.png" alt="Teal">
-          Teal
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/CincoXmeta" target="_blank">
-          <img src="images/members/cinco.png" alt="Cinco">
-          Cinco
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/doginalgm" target="_blank">
-          <img src="images/members/palm.png" alt="Palm">
-          Palm
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/Nedmetax" target="_blank">
-          <img src="images/members/ned.png" alt="Ned">
-          Ned
-        </a>
-      </div>
-      <div class="member-card">
-        <a href="https://twitter.com/VIP3877" target="_blank">
-          <img src="images/members/vip.png" alt="VIP">
-          VIP
-        </a>
-      </div>
+      <!-- Repeat for all members using the same structure -->
     </div>
-  </section>
-</body>
-</html>
+  </section>  <section id="contact" class="email-section">
+    <h2>Stay Connected</h2>
+    <form action="https://formspree.io/f/mblyjjyp" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Join Mailing List</button>
+    </form>
+    <br />
+    <a href="https://x.com/beaniedaox" target="_blank">Follow us on X: @beaniedaox</a>
+  </section>  <footer>
+    <p>&copy; 2025 Beanies On Business. All rights reserved.</p>
+  </footer>
+</body></html>
