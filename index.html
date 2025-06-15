@@ -1,130 +1,79 @@
-<!DOCTYPE html><html lang="en"><head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Beanies On Business</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="images/bob-logo.png" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }header {
-  background-color: #111;
-  color: white;
-  padding: 2rem 1rem;
-}
-
-header img {
-  max-width: 120px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 2rem;
-  margin: 0.5rem 0;
-}
-
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-section {
-  padding: 3rem 1rem;
-}
-
-.members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.member {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.member img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.member a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.email-section form input[type="email"] {
-  padding: 10px;
-  width: 60%;
-  max-width: 300px;
-}
-
-.email-section form button {
-  padding: 10px 20px;
-  background-color: #111;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-  </style>
-</head><body>
+  <title>Beanies On Business | BOB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   <header>
-    <img src="images/bob-logo.png" alt="BOB Logo">
-    <h1>BUILT BY HUSTLERS. WORN BY LEADERS.</h1>
+    <img src="images/bob-logo.png" alt="BOB Logo" class="logo" />
+    <h1>Beanies On Business</h1>
     <nav>
-      <a href="#what">What Is BOB?</a>
-      <a href="#join">Why Join?</a>
-      <a href="#members">DAO Members</a>
-      <a href="#contact">Stay Connected</a>
+      <a href="#why-join">Why Join</a>
+      <a href="#who-for">Who It's For</a>
+      <a href="#join">Join Now</a>
+      <a href="members.html">DAO Members</a>
     </nav>
-  </header>  <section id="what">
-    <h2>WHAT IS BEANIES ON BUSINESS?</h2>
-    <p>Born in the DoginalDogs ecosystem. Backed by community. Led by character, loyalty, and leadership. BOB is where pixel-born dogs become legends of Digital Business.</p>
-  </section>  <section id="join">
-    <h2>WHY JOIN?</h2>
-    <p>Participate in the Acquisition Group for DoginalDogs & Digital Assets. Shape and profit from premium apparel drops. Gain networking and visibility opportunities in a growing movement.</p>
-  </section>  <section id="members">
-    <h2>DAO MEMBERS</h2>
-    <div class="members">
-      <div class="member">
-        <a href="https://twitter.com/brohmetax" target="_blank">
-          <img src="images/members/broh.png" alt="Broh" />
-          Broh
-        </a>
-      </div>
-      <div class="member">
-        <a href="https://twitter.com/papasxmeta" target="_blank">
-          <img src="images/members/papas.png" alt="Papas" />
-          Papas
-        </a>
-      </div>
-      <!-- Repeat for all members using the same structure -->
+  </header>
+
+  <section class="section" id="why-join">
+    <h2>Why Join?</h2>
+    <div class="tab-buttons">
+      <button onclick="showTab('dao')">🏛 BOB DAO Access</button>
+      <button onclick="showTab('collection')">🕊️ Premium Collection</button>
+      <button onclick="showTab('community')">🌐 Community Power</button>
+      <button onclick="showTab('networking')">🤝 Networking</button>
     </div>
-  </section>  <section id="contact" class="email-section">
-    <h2>Stay Connected</h2>
+
+    <div class="tab-content" id="dao">
+      <h3>BOB DAO Access</h3>
+      <p>Participate in the Acquisition Group for DoginalDogs & Digital Assets.</p>
+    </div>
+    <div class="tab-content" id="collection" style="display:none;">
+      <h3>Premium Collection Investment</h3>
+      <p>Shop and profit from premium apparel drops.</p>
+    </div>
+    <div class="tab-content" id="community" style="display:none;">
+      <h3>Community Power</h3>
+      <p>Visibility, collaborations, marketing, and on-chain presence.</p>
+    </div>
+    <div class="tab-content" id="networking" style="display:none;">
+      <h3>Networking</h3>
+      <p>Connect with loyal builders — beanie or not.</p>
+    </div>
+  </section>
+
+  <section class="section" id="who-for">
+    <h2>Who’s It For?</h2>
+    <p><strong>BOB is for all.</strong> Beanie-wearers, brand believers, and any DoginalDog loyal to the movement. If you respect the mission — you belong.</p>
+  </section>
+
+  <section class="section" id="join">
+    <h2>Join Now</h2>
+    <p>Stay up to date or join us in building the future.</p>
     <form action="https://formspree.io/f/mblyjjyp" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Join Mailing List</button>
+      <button type="submit">Subscribe</button>
     </form>
-    <br />
-    <a href="https://x.com/beaniedaox" target="_blank">Follow us on X: @beaniedaox</a>
-  </section>  <footer>
+    <div class="wallet">
+      <a href="#" class="cta">Connect Wallet</a>
+      <a href="https://x.com/beaniedaox" class="cta" target="_blank">Follow on X</a>
+    </div>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Beanies On Business. All rights reserved.</p>
   </footer>
-</body></html>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll(".tab-content");
+      tabs.forEach(tab => tab.style.display = "none");
+      document.getElementById(tabId).style.display = "block";
+    }
+  </script>
+</body>
+</html>
